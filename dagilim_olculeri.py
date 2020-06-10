@@ -27,3 +27,19 @@ for i in dizi:
 
 oms = ust / adet
 print("Ortalama Mutlak Sapma = {}".format(oms))
+
+dizi.sort()
+
+q1 = (int)((25 / 100) * len(dizi))
+q1 = (dizi[q1-1] + dizi[q1]) / 2
+
+print("Q1 => {}".format(q1))
+
+q3 = (int)((75 / 100) * len(dizi))
+q3 = (dizi[q3-1] + dizi[q3]) / 2
+
+print("Q3 => {}".format(q3))
+
+degisim_katsayisi = standart_sapma * 100 / aritmatik_ort
+
+print("Değişim katsayısı => % {}".format(degisim_katsayisi))
